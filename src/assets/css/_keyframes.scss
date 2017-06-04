@@ -1,0 +1,32 @@
+@keyframes growVertical {
+	from {
+		transform: scaleY(0)
+	}
+	to {
+		transform: scaleY(1)
+	}
+}
+@keyframes fadeInUp {
+	from {
+		transform: translateY(30px);
+		opacity: 0;
+	}
+	to {
+		transform: none;
+		opacity: 1;
+	}
+}
+@keyframes toast {
+	0%, 100% {
+		opacity: 0;
+	}
+	0% {
+		transform: translateX(-50%) scale(.95);
+	}
+	20%, 100% {
+		transform: translateX(-50%) scale(1);
+	}
+	20%, 80% {
+		opacity: 1;
+	}
+}

@@ -1,0 +1,50 @@
+.add-form {
+	display: flex;
+	flex-direction: column;
+
+	@media all and (min-width: 769px) {
+		padding: 30px 0;
+		flex-direction: row;
+	}
+
+	&__container {
+		padding: 30px 15px;
+		position: relative;
+
+		@media all and (min-width: 769px) {
+			padding: 0 30px;
+		}
+
+		& + & {
+
+			&:after {
+				content: '';
+				height: 1px;
+				width: 100%;
+				background: $gray-medium;
+				position: absolute;
+				left: 0;
+				top: 0;
+				opacity: 0.5;
+
+				@media all and (min-width: 769px) {
+					height: 100%;
+					width: 1px;
+					animation: growVertical .3s ease-out forwards;
+				}
+			}
+		}
+	}
+
+	.form-submit {
+		margin-top: 3rem;
+		text-align: center;
+
+		.btn {
+			width: 100%;
+			@media all and (min-width: 769px) {
+				width: 50%;
+			}
+		}
+	}
+}

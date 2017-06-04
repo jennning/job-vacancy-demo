@@ -1,0 +1,172 @@
+/*
+	HTML elements & general classes
+*/
+html, body {
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+}
+
+input, select {
+	font-size: 1rem;
+}
+
+a {
+	color: $primary-color;
+	transition: color 0.2s ease;
+
+	&:hover, &:focus, &:active {
+		color: $primary-color-dark;
+		text-decoration: none;
+	}
+}
+
+.main-container {
+	margin: 30px auto;
+}
+
+.toast-message {
+	top: 100px;
+	left: 50%;
+	position: fixed;
+	padding: 20px;
+	background: $secondary-color;
+	color: $white;
+	box-shadow: 0 0 3px 1px opacify($secondary-color, .1);
+	z-index: 100;
+	transform: translateX(-50%);
+	animation: toast 1s ease;
+
+	p {
+		margin: 0;
+	}
+}
+/*
+	Buttons
+*/
+.btn {
+	transition: background 0.2s ease;
+
+	&:hover, &:focus, &:active {
+
+		&, &:hover, &:focus, &:active {
+			outline: none;
+		}
+	}
+
+	&:focus, &:active {
+		box-shadow: 0 0 2px 0 $gray;
+	}
+
+	&-primary {
+		border: 0;
+		border-radius: 0;
+		background: $primary-color;
+		padding: 10px 30px;
+		font-weight: bold;
+
+		&:hover, &:focus, &:active {
+			&, &:hover, &:focus, &:active {
+				background: $primary-color-dark;
+			}
+		}
+
+		&:focus, &:active {
+			box-shadow: 0 0 2px 0 $primary-color;
+		}
+	}
+}
+/*
+	Forms
+*/
+.form {
+	&-group {
+		margin: 0;
+	}
+
+	&-control {
+		background-color: $gray-light;
+		border-radius: 0;
+		border: 1px solid $gray-medium;
+		box-shadow: none;
+		height: 42px;
+
+		&:focus {
+			border-color: $gray-dark;
+			box-shadow: 0 0 2px 0 $gray-medium;
+		}
+
+		@media all and (min-width: 769px) {
+			height: 36px;
+		}
+	}
+
+	&__title {
+		text-transform: uppercase;
+		font-weight: 300;
+		margin-top: 0;
+		margin-bottom: 2rem;
+
+		@media all and (min-width: 769px) {
+			margin-bottom: 3rem;
+		}
+	}
+}
+
+.input-group {
+	&-addon {
+		border-color: $gray-medium;
+		border-radius: 0;
+		padding-left: 15px;
+		padding-right: 15px;
+		background: $gray-light;
+	}
+}
+
+.form-item {
+	& + & {
+		margin-top: 2rem;
+	}
+	label {
+		font-size: $font-size-small;
+		color: $gray-dark;
+	}
+	&__input {
+		position: relative;
+
+		textarea {
+			max-width: 100%;
+		}
+	}
+	&__error {
+		position: absolute;
+		top: calc(100% + 5px);
+		left: 0;
+		color: $alert-color;
+		font-size: $font-size-smallest;
+		margin: 0;
+	}
+	select {
+		appearance: none;
+		background: {
+			image: url(./assets/images/sort-down.png);
+			size: 8px;
+			position: right 11px top 13px;
+			repeat: no-repeat;
+		}
+		padding-right: 30px;
+	}
+}
+/*
+	Icon
+*/
+.icon-label {
+	position: relative;
+	padding-left: 35px;
+
+	&-image {
+		position: absolute;
+		top: 50%;
+		left: 15px;
+		transform: translate(-50%, -50%);
+	}
+}

@@ -1,0 +1,44 @@
+[
+	{
+		"contact": {
+			"name": {
+				"first": "John",
+				"last": "Woo"
+			},
+			"company": "iKon",
+			"phone": "0112341234",
+			"email": "john.woo@ikon.com"
+		},
+		"vacancy": {
+			"title": "Software QA Engineer",
+			"description": "As the QA Engineer your are responsible for the final quality of the iprice website and our partner portals. Without your approval, no new change will go live. You will develop and execute exploratory tests and subsequently automate them in order to guarantee a smooth running of our platforms.",
+			"industry": "Computer / Information Technology",
+			"location": "Kuala Lumpur",
+			"salary": {
+				"start": 3000,
+				"end": 6000
+			}
+		}
+	},
+	{
+		"contact": {
+			"name": {
+				"first": "Herman",
+				"last": "Felipe"
+			},
+			"company": "Ratimir",
+			"phone": "0112341234",
+			"email": "herman.felipe@ratimir.com"
+		},
+		"vacancy": {
+			"title": "Finance Manager",
+			"description": "You will be ACCA or CPA qualified and have demonstrated strong leadership abilities. You will possess highly developed analytical skills, demonstrate strong commercial acumen and will be comfortable interacting and engaging with a multitude of stakeholders both nationally and internationally. Strong academic results coupled with an eagerness to develop and progress will be favourably looked upon. Big 4 candidates are welcome to apply.",
+			"industry": "Account / Finance",
+			"location": "Kuala Lumpur",
+			"salary": {
+				"start": 7000,
+				"end": 12000
+			}
+		}
+	}
+]
