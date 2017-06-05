@@ -2,8 +2,6 @@
     <div>
         <app-header :app_title="app_title"></app-header>
         <router-view></router-view>
-        <!-- <show-jobs :jobs="jobs"></show-jobs>
-        <add-job @job-add="addJobToList" :jobs="jobs"></add-job> -->
     </div>
 </template>
 

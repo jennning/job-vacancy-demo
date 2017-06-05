@@ -38,7 +38,7 @@
                             		c18.938-21.033,28.41-46.11,28.41-75.229C388.994,328.801,387.759,319.855,385.261,311.475z"/>
                             </svg>
 
-    						{{ job.vacancy.salary.start + ' - ' + job.vacancy.salary.end }}
+    						{{ job.vacancy.salary.start | currency('RM', 0) }} - {{ job.vacancy.salary.end | currency('RM', 0) }}
                         </div>
 					</div>
 					<div class="item-body__location col-xs-6">
@@ -53,7 +53,7 @@
 					</div>
 				</div>
 				<div class="item-body__lower">
-					<p class="item-body__description">{{ job.vacancy.description }}</p>
+					<p class="item-body__description">{{ job.vacancy.description | truncate(350) }}</p>
 				</div>
 			</div>
 			<div class="job-item__footer">

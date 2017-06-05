@@ -1,7 +1,9 @@
+/*
+	Add form
+*/
 .add-form {
 	display: flex;
 	flex-direction: column;
-
 	@media all and (min-width: 769px) {
 		padding: 30px 0;
 		flex-direction: row;
@@ -10,13 +12,11 @@
 	&__container {
 		padding: 30px 15px;
 		position: relative;
-
 		@media all and (min-width: 769px) {
 			padding: 0 30px;
 		}
 
 		& + & {
-
 			&:after {
 				content: '';
 				height: 1px;
@@ -25,25 +25,31 @@
 				position: absolute;
 				left: 0;
 				top: 0;
-				opacity: 0.5;
-
+				opacity: 0.65;
 				@media all and (min-width: 769px) {
 					height: 100%;
 					width: 1px;
-					animation: growVertical .3s ease-out forwards;
+					animation: growVertical 0.4s ease-out forwards;
 				}
 			}
 		}
 	}
 
 	.form-submit {
-		margin-top: 3rem;
+		margin-top: 2rem;
 		text-align: center;
 
 		.btn {
 			width: 100%;
 			@media all and (min-width: 769px) {
 				width: 50%;
+			}
+		}
+
+		&.disable {
+			.btn {
+				pointer-events: none;
+				background: $gray-medium;
 			}
 		}
 	}
