@@ -5,7 +5,6 @@ import VueRouter from 'vue-router'
 import VeeValidate from 'vee-validate'
 import Vue2Filters from 'vue2-filters'
 import Routes from './routes'
-import RAFPoly from './raf-poly'
 
 
 Vue.use(VueResource);
